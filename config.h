@@ -68,19 +68,18 @@ static const char *termcmd[]  = { "alacritty", NULL };
 static const char *browser[] = { "firefox" };
 static const char *discord[] = { "discord" };
 static const char *screenshot[] = { "spectacle", "-fr", NULL};
-static const char *emotica[] = { "emotica" };
-static const char *emoji[] = { "emoji" };
-static const char *setlang[] = { "setlang" };
-static const char *logout[] = { "logout-sh" };
-static const char *volUp[] = { "audioUP" };
-static const char *volDown[] = { "audioDOWN" };
-static const char *translation[] = { "translate" };
-static const char *unicode[] = { "unicode" };
+static const char *emotica[] = { "emotica.sh" };
+static const char *emoji[] = { "emoji.sh" };
+static const char *setlang[] = { "setlang.sh" };
+static const char *logout[] = { "logout.sh" };
+static const char *volUp[] = { "audioUP.sh" };
+static const char *volDown[] = { "audioDOWN.sh" };
+static const char *translation[] = { "translate.sh" };
+static const char *unicode[] = { "unicode.sh" };
 static const char *gajim[] = { "gajim" };
 static const char *time[] = { "time.sh" };
 static const char *word[] = { "word.sh" };
-static const char *vidya[] = { "vidya" };
-static const char *vim[] = { "$TERM -e vim" };
+static const char *vidya[] = { "vidya.sh" };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -100,7 +99,6 @@ static Key keys[] = {
 	{ MODKEY,                       XK_u,      spawn,          {.v = unicode } },
 	{ MODKEY,                       XK_g,      spawn,          {.v = gajim } },
 	{ MODKEY|ShiftMask,             XK_v,      spawn,          {.v = vidya } },
-	{ MODKEY|ShiftMask,             XK_f,      setlayout,      {.v = vim } },
 	{ MODKEY,                       XK_v,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
